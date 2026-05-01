@@ -38,6 +38,12 @@
 }
 
 @media (max-width: 991px) {
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: clip;
+    }
+
     #header {
         padding: 0.75rem 0;
     }
@@ -45,13 +51,16 @@
     #header .container-fluid {
         padding: 0.85rem 1rem;
         border-radius: 26px;
+        overflow: visible;
     }
 
     .mobile-slide-nav {
         position: absolute;
         top: calc(100% + 0.9rem);
         left: 0;
-        width: min(320px, calc(100vw - 2rem));
+        right: 0;
+        width: auto;
+        max-width: calc(100vw - 2rem);
         padding: 1.1rem;
         border: 1px solid rgba(255, 255, 255, 0.6);
         border-radius: 24px;
@@ -93,7 +102,7 @@
     .home-banner.container-fluid,
     #home-banner .container-fluid.home-banner {
         min-height: auto;
-        padding: 1rem;
+        padding: 0.85rem;
         border-radius: 28px;
     }
 
@@ -159,7 +168,7 @@
 
     .hero-section {
         min-height: 62vh;
-        margin: 0 0.75rem 4.5rem;
+        margin: 0 0.5rem 4.5rem;
         background-attachment: scroll;
     }
 
@@ -219,7 +228,7 @@
     #about-sec .right,
     .contact-sec .left,
     .hero-section .hero-content {
-        padding: 1.55rem;
+        padding: 1.3rem;
         border-radius: 24px;
     }
 
@@ -274,7 +283,7 @@
     }
 
     .footer-menu li {
-        margin-right: 0.8rem;
+        margin-right: 0.65rem;
     }
 
     .social-icons {
@@ -282,11 +291,18 @@
     }
 
     .social-icons a {
-        margin: 0 0.35rem;
+        margin: 0 0.2rem;
     }
 }
 
 @media (max-width: 575px) {
+    .container,
+    .container-fluid,
+    .container-xxl {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
     #header .container-fluid {
         border-radius: 22px;
     }
@@ -297,13 +313,13 @@
 
     .top-head {
         font-size: 0.84rem;
-        letter-spacing: 0.16rem;
+        letter-spacing: 0.1rem;
     }
 
     .btn-main,
     .btn-sec {
         width: 100%;
-        padding: 0.9rem 1.2rem;
+        padding: 0.9rem 1rem;
         font-size: 0.88rem;
     }
 
@@ -317,7 +333,7 @@
     }
 
     .home-banner .video-box {
-        height: 340px;
+        height: 300px;
         border-radius: 22px;
     }
 
@@ -333,8 +349,12 @@
         right: 0.85rem;
         bottom: 0.85rem;
         left: 0.85rem;
-        padding: 0.85rem;
+        padding: 0.8rem;
         border-radius: 18px;
+    }
+
+    .reel-content h3 {
+        font-size: 1.1rem;
     }
 
     .stats-section {
@@ -363,12 +383,41 @@
     }
 
     .contact-sec .left {
-        padding: 1.35rem;
+        padding: 1.15rem;
     }
 
     #about-sec .right,
     #about-sec .left .img-box {
         height: auto;
+    }
+
+    .footer-menu li {
+        display: block;
+        margin: 0 0 0.8rem;
+    }
+
+    .footer-menu li a {
+        display: inline-block;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.55rem;
+    }
+
+    .social-icons a {
+        margin: 0;
+        width: 42px;
+        height: 42px;
+    }
+
+    .social {
+        right: 0.65rem;
+        left: 0.65rem;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     textarea.form-control {
