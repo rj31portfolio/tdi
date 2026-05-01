@@ -251,7 +251,7 @@ ul {
 }
 
 #header .navbar-brand img {
-    max-height: 62px;
+    max-height: 84px;
     width: auto !important;
 }
 
@@ -654,7 +654,8 @@ ul {
 
 #services-sec .card .card-img-top {
     height: 340px;
-    object-fit: contain;
+    width: 100%;
+    object-fit: cover;
     transition: transform 0.6s ease;
     background: rgba(255, 249, 244, 0.96);
 }
@@ -795,11 +796,11 @@ ul {
 .hero-section {
     position: relative;
     min-height: 72vh;
-    margin: 0 1rem 6rem;
+    margin: 0 1rem 5rem;
     padding: 4rem 1.25rem;
     border-radius: var(--radius-lg);
     background:
-        linear-gradient(120deg, rgba(17, 13, 10, 0.68) 0%, rgba(17, 13, 10, 0.62) 44%, rgba(201, 164, 106, 0.18) 100%),
+        linear-gradient(120deg, rgba(17, 13, 10, 0.82) 0%, rgba(37, 24, 18, 0.74) 44%, rgba(201, 164, 106, 0.3) 100%),
         url("img/mid-banner.jpg") center/cover no-repeat;
     display: flex;
     align-items: center;
@@ -847,6 +848,91 @@ ul {
     margin: 0 auto 2rem;
     color: rgba(255, 247, 239, 0.84);
     font-size: 1.05rem;
+}
+
+#reels-sec {
+    padding-top: 0 !important;
+    margin-bottom: 5rem;
+}
+
+.reels-sec .heading {
+    margin-bottom: 1.2rem;
+}
+
+.reels-intro {
+    max-width: 650px;
+    font-size: 1rem;
+    color: var(--muted);
+}
+
+.reel-card {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    background: linear-gradient(180deg, rgba(255, 252, 248, 0.94), rgba(255, 248, 241, 0.8));
+    border: 1px solid rgba(255, 255, 255, 0.64);
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.reel-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 70px rgba(36, 26, 18, 0.16);
+}
+
+.reel-media {
+    position: relative;
+    aspect-ratio: 9 / 16;
+    overflow: hidden;
+    background: #1c1713;
+}
+
+.reel-media::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), transparent 30%, transparent 58%, rgba(0, 0, 0, 0.45));
+    pointer-events: none;
+}
+
+.reel-media video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.reel-content {
+    position: absolute;
+    right: 1.15rem;
+    bottom: 1.15rem;
+    left: 1.15rem;
+    z-index: 1;
+    padding: 1rem;
+    border-radius: 22px;
+    background: rgba(15, 11, 9, 0.42);
+    backdrop-filter: blur(16px);
+    color: #fff8f2;
+}
+
+.reel-tag {
+    display: inline-flex;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.reel-content h3 {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: 1.45rem;
+    line-height: 1.15;
 }
 
 #contact-sec {
@@ -1098,6 +1184,7 @@ form label {
 #services-sec .card,
 #about-sec .right,
 #about-sec .left .img-box,
+.reel-card,
 .partner-sec .img-box,
 .contact-sec .left,
 .hero-section .hero-content {

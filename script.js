@@ -16,7 +16,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 const animatedElements = document.querySelectorAll(
-    ".feature-box, .stat-box, .card, #about-sec .img-box, #about-sec .right, .partner-sec .img-box, .contact-sec .left, .hero-section .hero-content"
+    ".feature-box, .stat-box, .card, #about-sec .img-box, #about-sec .right, .partner-sec .img-box, .reel-card, .contact-sec .left, .hero-section .hero-content"
 );
 
 if (animatedElements.length && "IntersectionObserver" in window) {
