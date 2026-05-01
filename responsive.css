@@ -1,0 +1,345 @@
+@media (max-width: 1399px) {
+    .home-banner .content {
+        max-width: 620px;
+    }
+
+    #services-sec .card .card-img-top {
+        height: 300px;
+    }
+}
+
+@media (max-width: 1199px) {
+    #header .container-fluid {
+        border-radius: 30px;
+    }
+
+    #home-banner .row {
+        min-height: auto;
+    }
+
+    .home-banner .left {
+        padding: 2rem 1rem 1rem;
+    }
+
+    .home-banner .content,
+    #about-sec .right,
+    .contact-sec .left,
+    .hero-section .hero-content {
+        padding: 2rem;
+    }
+
+    .feature-title {
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 991px) {
+    #header {
+        padding: 0.75rem 0;
+    }
+
+    #header .container-fluid {
+        padding: 0.85rem 1rem;
+        border-radius: 26px;
+    }
+
+    .mobile-slide-nav {
+        position: absolute;
+        top: calc(100% + 0.9rem);
+        left: 0;
+        width: min(320px, calc(100vw - 2rem));
+        padding: 1.1rem;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 24px;
+        background: rgba(255, 252, 248, 0.95);
+        box-shadow: 0 24px 60px rgba(36, 26, 18, 0.12);
+        backdrop-filter: blur(18px);
+    }
+
+    #header .navbar-nav {
+        align-items: flex-start;
+        gap: 0;
+        margin: 0 0 1rem;
+    }
+
+    #header .nav-link {
+        width: 100%;
+        padding: 0.8rem 0 !important;
+    }
+
+    #header .nav-link::after {
+        left: 0;
+        right: auto;
+        width: 60px;
+        bottom: 0.2rem;
+    }
+
+    #header form {
+        width: 100%;
+    }
+
+    #header form .btn-main {
+        width: 100%;
+    }
+
+    #home-banner {
+        padding-top: 1.3rem;
+    }
+
+    .home-banner.container-fluid,
+    #home-banner .container-fluid.home-banner {
+        min-height: auto;
+        padding: 1rem;
+        border-radius: 28px;
+    }
+
+    .home-banner .left,
+    .home-banner .content {
+        max-width: 100%;
+    }
+
+    .home-banner .content,
+    #home-banner .slider-box {
+        margin-inline: auto;
+    }
+
+    #home-banner .heading,
+    #home-banner .top-head,
+    .banner-text,
+    .home-banner .left p,
+    .services-sec .heading,
+    .section-desc,
+    .contact-sec .heading,
+    .hero-section .hero-content p {
+        text-align: center;
+    }
+
+    #home-banner .heading::after,
+    .services-sec .heading::after,
+    .contact-sec .heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #home-banner .btn-box {
+        justify-content: center;
+    }
+
+    .home-banner .video-box {
+        height: 520px;
+        margin-top: 1rem;
+    }
+
+    .stats-section {
+        padding-bottom: 4.5rem;
+        margin-top: 0;
+    }
+
+    #about-sec,
+    .services-sec,
+    .why-choose-section,
+    #partner-sec {
+        padding: 4.4rem 0;
+    }
+
+    #about-sec .left {
+        margin-bottom: 1.5rem;
+    }
+
+    .why-choose-section .heading,
+    .why-choose-section .top-head,
+    .section-desc {
+        text-align: center;
+        margin-inline: auto;
+    }
+
+    .hero-section {
+        min-height: 62vh;
+        margin: 0 0.75rem 5rem;
+        background-attachment: scroll;
+    }
+
+    #contact-sec {
+        margin-bottom: 5rem;
+    }
+
+    .social {
+        top: auto;
+        bottom: 1rem;
+        right: 1rem;
+        width: auto;
+        transform: none;
+        flex-direction: row;
+        gap: 0.55rem;
+    }
+
+    .social a {
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        justify-content: center;
+        border-radius: 50%;
+        overflow: hidden;
+        text-indent: -9999px;
+    }
+
+    .social a:hover {
+        transform: translateY(-4px);
+    }
+
+    .social a i {
+        margin: 0;
+        text-indent: 0;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .heading {
+        font-size: clamp(2rem, 1.7rem + 1.6vw, 2.9rem);
+    }
+
+    #header .navbar-brand img {
+        max-height: 50px;
+    }
+
+    #home-banner .heading {
+        font-size: clamp(2.2rem, 1.8rem + 3vw, 3.6rem);
+    }
+
+    .home-banner .content,
+    #about-sec .right,
+    .contact-sec .left,
+    .hero-section .hero-content {
+        padding: 1.55rem;
+        border-radius: 24px;
+    }
+
+    #home-banner .btn-box {
+        flex-direction: column;
+    }
+
+    #home-banner .btn-box .btn-main,
+    #home-banner .btn-box .btn-sec {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    .home-banner .video-box {
+        height: 420px;
+    }
+
+    .stat-box {
+        padding: 1.6rem 1rem;
+        border-radius: 22px;
+    }
+
+    .stat-box h2 {
+        font-size: clamp(2rem, 1.7rem + 1vw, 2.8rem);
+    }
+
+    .stat-box p {
+        font-size: 0.7rem;
+        letter-spacing: 0.16rem;
+    }
+
+    .feature-box {
+        padding: 1.6rem 1.2rem;
+    }
+
+    #services-sec .card .card-img-top {
+        height: 250px;
+    }
+
+    .partner-sec .img-box {
+        min-height: 90px;
+    }
+
+    .hero-section {
+        min-height: auto;
+        padding: 3rem 1rem;
+        border-radius: 26px;
+    }
+
+    .footer-menu li {
+        margin-right: 0.8rem;
+    }
+
+    .social-icons {
+        margin-top: 0.75rem;
+    }
+
+    .social-icons a {
+        margin: 0 0.35rem;
+    }
+}
+
+@media (max-width: 575px) {
+    #header .container-fluid {
+        border-radius: 22px;
+    }
+
+    .top-head {
+        font-size: 0.84rem;
+        letter-spacing: 0.16rem;
+    }
+
+    .btn-main,
+    .btn-sec {
+        width: 100%;
+        padding: 0.9rem 1.2rem;
+        font-size: 0.88rem;
+    }
+
+    .home-banner.container-fluid,
+    #home-banner .container-fluid.home-banner,
+    .contact-sec .left,
+    .hero-section,
+    #about-sec .left .img-box,
+    #about-sec .right {
+        border-radius: 22px;
+    }
+
+    .home-banner .video-box {
+        height: 340px;
+        border-radius: 22px;
+    }
+
+    .stats-section {
+        padding-bottom: 3.5rem;
+    }
+
+    .stat-box {
+        min-height: auto;
+    }
+
+    #services-sec .card {
+        border-radius: 24px;
+    }
+
+    #services-sec .card-body {
+        padding: 1.45rem 1.2rem 1.6rem;
+    }
+
+    #services-sec .card-body::before {
+        left: 1.2rem;
+        right: 1.2rem;
+    }
+
+    .feature-title {
+        font-size: 1.22rem;
+    }
+
+    .contact-sec .left {
+        padding: 1.35rem;
+    }
+
+    #about-sec .right,
+    #about-sec .left .img-box {
+        height: auto;
+    }
+
+    textarea.form-control {
+        min-height: 180px;
+    }
+}
